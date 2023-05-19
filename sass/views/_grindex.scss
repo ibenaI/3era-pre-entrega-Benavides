@@ -1,0 +1,19 @@
+.hero_grindex {
+    padding: 20px;
+
+    &__content {
+        @extend .content;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+
+        &-data {
+            p {
+                text-align: justify;
+            }
+        }
+    }
+}

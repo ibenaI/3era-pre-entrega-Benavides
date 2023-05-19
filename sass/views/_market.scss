@@ -1,0 +1,18 @@
+.hero_market {
+    padding: 30px;
+
+    &__content {
+        @extend .content;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: start;
+        gap: 30px;
+
+        &-data{
+            p{
+                text-align: justify;
+            }
+        }
+    }
+}

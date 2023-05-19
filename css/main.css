@@ -67,7 +67,7 @@ body {
   background-color: rgb(20, 26, 38);
 }
 
-.content, .contacto__content, .hero__content, .head__content {
+.content, .hero_grindex__content, .hero_rank__content, .hero_market__content, .hero_news, .contacto__content, .hero__content, .head__content {
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -154,4 +154,68 @@ body {
   background-color: gray;
   transform: translateY(1px);
   box-shadow: 0 5px gold;
+}
+
+.hero_news {
+  padding: 20px;
+}
+.hero_news__content {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.hero_news__content img {
+  margin: 10px auto;
+  width: 225px;
+}
+.hero_news__content-data p {
+  text-align: justify;
+  padding: 20px;
+}
+
+.hero_market {
+  padding: 30px;
+}
+.hero_market__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  gap: 30px;
+}
+.hero_market__content-data p {
+  text-align: justify;
+}
+
+.hero_rank {
+  padding: 20px;
+}
+.hero_rank__content {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  align-items: center;
+  gap: 10px;
+}
+.hero_rank__content p {
+  text-align: justify;
+}
+.hero_rank__content-data img {
+  width: 100%;
+}
+
+.hero_grindex {
+  padding: 20px;
+}
+.hero_grindex__content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.hero_grindex__content-data p {
+  text-align: justify;
 }
