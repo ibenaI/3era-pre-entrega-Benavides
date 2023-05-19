@@ -1,0 +1,44 @@
+.pie {
+    padding: 15px;
+    &__content {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+
+        p {
+            small {
+                padding: 2px;
+                text-align: center;
+                color: gold;
+            }
+        }
+
+        &-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+
+            button {
+                border: solid 1px gold;
+                border-radius: 10px;
+                text-align: center;
+                padding: 5px;
+                cursor: pointer;
+                background-color: gray;
+                small{
+                    color: black;
+                }
+                
+                &:active {
+                    background-color: gray;
+                    transform: translateY(1px);
+                    box-shadow: 0 5px gold;   
+                }
+            }
+        }
+    }
+}

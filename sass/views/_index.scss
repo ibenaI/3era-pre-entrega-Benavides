@@ -1,0 +1,95 @@
+.hero {
+    padding: 30px;
+    &__content {
+        @extend .content;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+
+        &-data {
+            h1 {
+                text-align: start;
+            }
+            p {
+                text-align: justify;
+                margin: 10px 0;
+                
+            }
+            button {
+                margin: 10px 0; 
+                border: solid 1px gold;
+                border-radius: 18px;
+                padding: 5px;
+                cursor: pointer;
+                text-align: center;
+                background-color: gray;
+                small {
+                    color: black;
+                }
+
+                &:active {
+                    background-color: gray;
+                    transform: translateY(1px);
+                    box-shadow: 0 5px gold;
+                }
+            }
+        }
+    }
+}
+
+.contacto {
+    padding: 20px;
+    
+    &__content {
+        @extend .content;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+
+        h1 {
+            text-align: center;
+        }
+        p {
+            text-align: center;
+        }
+
+        &-data {
+            margin: 15px auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+
+            input {
+                border-radius: 15px;
+                border: 2px solid gold;
+                padding: 4px;
+                cursor: text;
+                background-color: gray;
+                color: black;
+            }
+            button {
+                border: solid 1px gold;
+                border-radius: 10px;
+                padding: 5px;
+                cursor: pointer;
+                text-align: center;
+                background-color: gray;
+                small {
+                    color: black;
+                }
+
+                &:active {
+                    background-color: gray;
+                    transform: translateY(1px);
+                    box-shadow: 0 5px gold;
+                }
+            }
+        }
+    }
+}

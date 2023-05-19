@@ -1,3 +1,42 @@
+.pie {
+  padding: 15px;
+}
+.pie__content {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.pie__content p small {
+  padding: 2px;
+  text-align: center;
+  color: gold;
+}
+.pie__content-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.pie__content-button button {
+  border: solid 1px gold;
+  border-radius: 10px;
+  text-align: center;
+  padding: 5px;
+  cursor: pointer;
+  background-color: gray;
+}
+.pie__content-button button small {
+  color: black;
+}
+.pie__content-button button:active {
+  background-color: gray;
+  transform: translateY(1px);
+  box-shadow: 0 5px gold;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -15,11 +54,104 @@ a {
 
 hr {
   max-width: 1200px;
-  margin: 30px auto;
+  margin: 10px auto;
   color: gold;
   padding: 30px;
 }
 
+p {
+  line-height: 1.5;
+}
+
 body {
   background-color: rgb(20, 26, 38);
+}
+
+.content, .contacto__content, .hero__content, .head__content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero {
+  padding: 30px;
+}
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.hero__content-data h1 {
+  text-align: start;
+}
+.hero__content-data p {
+  text-align: justify;
+  margin: 10px 0;
+}
+.hero__content-data button {
+  margin: 10px 0;
+  border: solid 1px gold;
+  border-radius: 18px;
+  padding: 5px;
+  cursor: pointer;
+  text-align: center;
+  background-color: gray;
+}
+.hero__content-data button small {
+  color: black;
+}
+.hero__content-data button:active {
+  background-color: gray;
+  transform: translateY(1px);
+  box-shadow: 0 5px gold;
+}
+
+.contacto {
+  padding: 20px;
+}
+.contacto__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.contacto__content h1 {
+  text-align: center;
+}
+.contacto__content p {
+  text-align: center;
+}
+.contacto__content-data {
+  margin: 15px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.contacto__content-data input {
+  border-radius: 15px;
+  border: 2px solid gold;
+  padding: 4px;
+  cursor: text;
+  background-color: gray;
+  color: black;
+}
+.contacto__content-data button {
+  border: solid 1px gold;
+  border-radius: 10px;
+  padding: 5px;
+  cursor: pointer;
+  text-align: center;
+  background-color: gray;
+}
+.contacto__content-data button small {
+  color: black;
+}
+.contacto__content-data button:active {
+  background-color: gray;
+  transform: translateY(1px);
+  box-shadow: 0 5px gold;
 }

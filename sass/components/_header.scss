@@ -1,0 +1,6 @@
+.head {
+
+    &__content {
+        @extend .content;
+    }
+}
