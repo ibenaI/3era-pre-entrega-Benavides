@@ -21,3 +21,16 @@
         }
     }
 }
+
+@media (min-width: $bpLarge) {
+    .hero_news__content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: start;
+
+        img {
+            width: 65%;
+            height: 80%;
+        }
+    }
+}

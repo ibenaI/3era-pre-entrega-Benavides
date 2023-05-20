@@ -17,3 +17,19 @@
         }
     }
 }
+
+@media (min-width: $bpLarge) {
+    .hero_grindex {
+        margin: 50px
+    }
+    .hero_grindex__content {
+        @extend .content;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+
+        img {
+            justify-self: center;
+        }
+    }
+}

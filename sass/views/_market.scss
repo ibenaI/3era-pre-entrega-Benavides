@@ -6,8 +6,12 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        align-items: start;
+        align-items: center;
         gap: 30px;
+
+        img {
+            height: 325px;
+        }
 
         &-data{
             p{
@@ -16,3 +20,27 @@
         }
     }
 }
+
+@media (min-width: $bpLarge) {
+    .hero_market {
+        margin: 20px
+    }
+    .hero_market__content {
+        @extend .content;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    
+
+        img {
+            justify-self: center;
+            width: auto;
+            height: auto;
+            }
+        }
+    }
+    .hero_market__content-data {
+        p {
+            text-align: justify;
+        }
+    }

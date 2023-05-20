@@ -93,3 +93,19 @@
         }
     }
 }
+
+@media (min-width: $bpLarge) {
+    .hero__content {
+        @extend .content;
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .hero__content-data {
+        text-align: start;
+        padding: 10px;
+    }
+
+}
