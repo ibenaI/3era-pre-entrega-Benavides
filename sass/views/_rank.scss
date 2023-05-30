@@ -1,22 +1,28 @@
-.hero_rank {
-    padding: 20px;
+// .hero_rank {
+//     padding: 20px;
 
-    &__content {
-        @extend .content;
-         display: grid;
-         grid-template-rows: repeat(2, 1fr);
-         align-items: center;
-         gap: 10px;
+//     &__content {
+//         @extend .content;
+//          display: grid;
+//          grid-template-rows: repeat(2, 1fr);
+//          align-items: center;
+//          gap: 10px;
 
-         p {
-            text-align: justify;
-         }
+//          p {
+//             text-align: justify;
+//          }
 
-        &-data {
-            img {
-                width: 100%;
-            }
-        }
-    }
-}
+//         &-data {
+//             img {
+//                 width: 100%;
+//             }
+//         }
+//     }
+// }
 // hay un problema con la imagen que no puedo solucionar :/
+.rank {
+    @extend .content;
+}
+#chart_div {
+    width: 100%;
+}
